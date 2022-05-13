@@ -127,7 +127,7 @@
   font-size: larger;
   cursor: pointer;
   position: absolute;
-  top: 60vmin;
+  top: 50vmin;
 }
 
 .First-section-text {
@@ -135,14 +135,45 @@
   font-weight: bolder;
   font-size: 4vw;
   position: absolute;
-  top: 40vmin;
+  top: 20vmin;
   z-index: 1;
+  overflow-wrap: break-word;
+  inline-size: 100vmin;
+  text-align: center;
 }
-.First-section-text-smaller {
-  font-family: Merienda;
-  font-weight: bolder;
-  font-size: 2vw;
-  position: absolute;
-  top: 40vmin;
-  z-index: 1;
+
+.First-section-footer {
+  height: 10vmin;
+  background-color: #65686e;
+  display: flex;
+  place-content: center;
+}
+
+.Navigate-down-button {
+  position: relative;
+  top: 2vmin;
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 50%;
+  border: none;
+  background-image: url("https://static.thenounproject.com/png/516849-200.png");
+  background-size: cover;
+}
+
+.Navigate-down-button:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 400ms;
+}
+
+.Second-section {
+  display: flex;
+  justify-content: center;
+  background-color: #65686e;
+  height: 105vmin;
+}
+
+.Second-section-content {
+  display: grid;
+  position: relative;
 }
