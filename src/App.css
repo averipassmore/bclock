@@ -7,6 +7,10 @@
   height: 5vmin;
 }
 
+/* * {
+  border:1px solid red
+} */
+
 .Instagram-logo{
   max-width: 5vmin;
   max-height: 5vmin;
@@ -46,4 +50,82 @@
   font-family: Merienda;
   font-weight: bolder;
   padding-left: 1%;
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #65686e;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vmin;
+}
+
+.Business-logo {
+  max-width: 10vmin;
+  max-height: 10vmin;
+  display: flex;
+  align-items: right;
+  vertical-align: middle;
+  padding-left: 8%;
+}
+
+.Quote-button {
+  background-color: rgb(246, 243, 242);
+  display:block;
+  height: 8vmin;
+  width: 25vmin;
+  border-radius: 50%;
+  border: .4vmin solid black;
+  color: #282c34;
+  font-family: Merienda;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.Nav-button {
+  padding-right: 8%;
+}
+
+.Nav-text {
+  font-family: Merienda;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+.Phone-number {
+  padding-right: 25%;
+  color: white;
+  font-family: Merienda;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.Background {
+  object-fit: contain;
+  width: 150vmin;
+  height: 75vmin;
+  display: flex;
+}
+
+.First-section {
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+}
+
+.First-section-button {
+  background-color: rgb(246, 243, 242);
+  height: 20vmin;
+  width: 40vmin;
+  border-radius: 50%;
+  border: .4vmin solid black;
+  color: #282c34;
+  font-family: Merienda;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+  position: absolute;
+  top: 50vmin;
 }
