@@ -1,3 +1,7 @@
+/* * {
+  border: .1px solid red
+} */
+
 .Top-bar {
   display: flex;
   flex-direction: row;
@@ -5,10 +9,9 @@
   justify-content: space-between;
   align-items: center;
   height: 5vmin;
-}
-
-* {
-  border:1px solid red
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .Instagram-logo{
@@ -35,16 +38,6 @@
   padding-right: 1%;
 }
 
-.Hidden-content:hover:after {
-  content:attr(data-legend);
-  position:absolute;
-  left:0;
-  bottom:0;
-  right:0;
-  text-align:center;
-  transform:translateY(100%);
-}
-
 .Address {
   color: white;
   font-family: Merienda;
@@ -59,6 +52,10 @@
   justify-content: space-between;
   align-items: center;
   height: 10vmin;
+  position: fixed;
+  width: 100%;
+  top: 5vmin;
+  z-index: 2;
 }
 
 .Business-logo {
@@ -166,14 +163,25 @@
   transition-duration: 400ms;
 }
 
-.Second-section {
+.Services {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #65686e;
-  height: 105vmin;
+  text-align: center;
+  color: white;
 }
 
-.Second-section-content {
-  display: grid;
-  position: relative;
+.Services-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.Services-cell {
+  width: 35vmin;
+  background-color: white;
 }

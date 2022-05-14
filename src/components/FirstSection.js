@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const FirstSectionBackground = () => {
+const FirstSection = () => {
   return (
     <div>
       <div className="First-section">
@@ -16,4 +16,4 @@ const FirstSectionBackground = () => {
   )
 }
 
-export default FirstSectionBackground;
+export default FirstSection;
