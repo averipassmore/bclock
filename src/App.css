@@ -11,7 +11,8 @@
   height: 5vmin;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
+  top: 0;
 }
 
 .Instagram-logo{
@@ -110,6 +111,11 @@
   display: flex;
   justify-content: center;
   background-color: #282c34;
+  padding-top: 7.8vmin;
+}
+
+.Wrapper-div {
+  margin: 7.2vmin;
 }
 
 .First-section-button {
@@ -177,11 +183,24 @@
   flex-direction: row;
   justify-content: space-between;
   color: black;
-  padding-left: 2%;
-  padding-right: 2%;
+  flex-wrap: wrap;
+  padding: 3vmin;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .Services-cell {
   width: 35vmin;
   background-color: white;
+  height: 65vmin;
+  overflow: scroll;
+  margin: 2vmin;
+  border-radius: 5vmin;
+}
+
+.Services-images {
+  max-width: 15vmin;
+  max-height: 15vmin;
+  position: relative;
+  top: 2vmin
 }
