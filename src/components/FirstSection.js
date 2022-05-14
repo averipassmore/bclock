@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FirstSection = () => {
   return (
-    <div>
+    <div id="First-section-component">
       <div className="Wrapper-div"></div>
       <div className="First-section">
         <img src="https://ychef.files.bbci.co.uk/976x549/p087r1np.jpg" className="Background"></img>
