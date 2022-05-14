@@ -11,7 +11,7 @@ const FirstSection = () => {
         <button className="First-section-button" type="submit">Get a quote!</button>
       </div>
       <div className="First-section-footer">
-        <button className="Navigate-down-button"></button>
+        <a href="#Services-component" className="Navigate-down-button"></a>
       </div>
     </div>
   )

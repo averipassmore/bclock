@@ -153,14 +153,15 @@
 }
 
 .Navigate-down-button {
-  position: relative;
-  top: 2vmin;
+  position: fixed;
   width: 6vmin;
   height: 6vmin;
   border-radius: 50%;
   border: none;
   background-image: url("https://static.thenounproject.com/png/516849-200.png");
   background-size: cover;
+  bottom: 2vmin;
+  z-index: 4;
 }
 
 .Navigate-down-button:hover {
@@ -176,6 +177,8 @@
   background-color: #65686e;
   text-align: center;
   color: white;
+  position: relative;
+  top: -1;
 }
 
 .Services-content {
@@ -192,7 +195,7 @@
 .Services-cell {
   width: 35vmin;
   background-color: white;
-  height: 65vmin;
+  height: 74vmin;
   overflow: scroll;
   margin: 2vmin;
   border-radius: 5vmin;
@@ -203,4 +206,9 @@
   max-height: 15vmin;
   position: relative;
   top: 2vmin
+}
+
+.Services-title {
+  position: relative;
+  /* top: 2vmin; */
 }
