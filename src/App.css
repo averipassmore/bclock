@@ -74,7 +74,7 @@ html {
 
 .Quote-button {
   background-color: rgb(246, 243, 242);
-  display:block;
+  display: block;
   height: 8vmin;
   width: 25vmin;
   border-radius: 50%;
@@ -87,6 +87,8 @@ html {
 
 .Nav-button {
   padding-right: 8%;
+  display: flex;
+  text-align: center;
 }
 
 .Nav-text {
@@ -115,11 +117,10 @@ html {
   display: flex;
   justify-content: center;
   background-color: #282c34;
-  padding-top: 7.8vmin;
 }
 
 .Wrapper-div {
-  margin: 7.2vmin;
+  margin: 15vmin;
 }
 
 .First-section-button {
@@ -215,4 +216,24 @@ html {
 .Services-title {
   position: relative;
   /* top: 2vmin; */
+}
+
+.Quote-title {
+  position: relative;
+  top: 15vmin;
+  text-align: center;
+}
+
+.Quote-form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.Quote-form {
+  position: relative;
+  background-color: red;
+  height: 80vmin;
+  width: 110vmin;
+  border-radius: 3vmin;
+  top: 2vmin
 }

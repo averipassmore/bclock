@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Services from "./Services";
 
 const FirstSection = () => {
   return (
@@ -13,6 +14,7 @@ const FirstSection = () => {
       <div className="First-section-footer">
         <a href="#Services-component" className="Navigate-down-button"></a>
       </div>
+      <Services />
     </div>
   )
 }
