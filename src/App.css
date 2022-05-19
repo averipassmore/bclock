@@ -290,10 +290,25 @@ html {
 }
 
 .Services-images {
-  max-width: 15vmin;
-  max-height: 15vmin;
+  width: 12vmin;
+  height: 12vmin;
   position: relative;
-  top: 2vmin;
+}
+
+.Services-image-background {
+  height: 15vmin;
+  width: 15vmin;
+  background-color: white;
+  border-radius: 50%;
+  border-color: black;
+  border-width: .5vmin;
+  border-style: solid;
+  display: flex;
+  position: relative;
+  left: 10vmin;
+  top: 1vmin;
+  justify-content: center;
+  align-items: center;
 }
 
 .Services-title {
