@@ -26,8 +26,8 @@ const FirstSection = () => {
         <div className="First-section-button">
           <Link to='/quote' className="First-section-button-text">Get a Quote!</Link>
         </div>
-        <img src={skelly} className="Skelly-left"></img>
-        <img src={skelly} className="Skelly-right"></img>
+        <img src={skelly} className="Skelly-left" alt=""></img>
+        <img src={skelly} className="Skelly-right" alt=""></img>
         <h1 className="First-section-text-2">"For all your security needs!"</h1>
       </div>
       <div className="First-section-footer">
