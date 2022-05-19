@@ -26,8 +26,9 @@ html {
   width: 4vmin;
   height: 4vmin;
   align-items: right;
-  vertical-align: middle;
-  padding: 1vmin;
+  padding-right: 1vmin;
+  position: relative;
+  display: flex;
 }
 
 .Instagram-wrapper {
@@ -56,7 +57,6 @@ html {
   align-items: right;
   vertical-align: middle;
   position: relative;
-  top: .5vmin;
 }
 
 .Email-wrapper {
@@ -67,15 +67,18 @@ html {
   display: flex;
   flex-direction: row;
   padding-right: 1%;
+  justify-content: center;
+  align-items: center;
 }
 
 .Address {
   color: black;
   font-family: Merienda;
   font-weight: bolder;
-  padding-left: 0%;
+  padding-left: 1%;
   font-size: 2vmin;
   text-decoration: none;
+  max-width: 30%;
 }
 
 .Navbar {
@@ -136,11 +139,6 @@ html {
     align-items: center;
     display: flex;
   }
-  
-  /* a.bt{
-    display: block;
-    padding: 0;
-  } */
 }
 
 .Nav-text {
@@ -154,14 +152,18 @@ html {
 }
 
 .Phone-number {
-  position: relative;
-  left: -17vmin;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  width: fit-content;
   color: black;
   font-family: Merienda;
   font-weight: bolder;
   text-decoration: none;
   cursor: copy;
   font-size: 2vmin;
+  transform: translate(-50%, -50%);
+  top: 2.5vmin;
 }
 
 .First-section {
@@ -375,6 +377,7 @@ div *::-webkit-scrollbar-thumb {
 .Services-title {
   position: relative;
   top: 1vmin;
+  font-size: 4.5vmin;
 }
 
 .Quote-title {
@@ -398,8 +401,6 @@ div *::-webkit-scrollbar-thumb {
   top: 2vmin;
 }
 
-
-
 .Reviews-wrapper {
   background-color: #282c34;
   display: flex;
@@ -410,6 +411,7 @@ div *::-webkit-scrollbar-thumb {
   padding: 5vmin;
   position: relative;
   padding-top: 10vmin;
+  justify-content: center;
 }
 
 .Reviews-cell {
@@ -424,10 +426,13 @@ div *::-webkit-scrollbar-thumb {
 
 .Reviews-title {
   position: absolute;
-  left: 60vmin;
   font-family: Merienda;
   color: white;
-  top: 1vmin
+  top: 1vmin;
+  font-size: 4.5vmin;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
 }
 
 .Reviews-image {
@@ -453,4 +458,8 @@ div *::-webkit-scrollbar-thumb {
 
 .Reviews-text p{
   font-size: 2.5vmin;
+}
+
+.Reviews-text h1{
+  font-size: 5vmin;
 }
