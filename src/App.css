@@ -238,8 +238,8 @@ html {
   background-image: url("https://static.thenounproject.com/png/516849-200.png");
   background-size: cover;
   bottom: 2vmin;
-  z-index: 4;
-  filter: brightness(0) invert(1)
+  z-index: 1;
+  filter: invert(1)
 }
 
 .Navigate-down-button:hover {
@@ -274,7 +274,6 @@ html {
   width: 35vmin;
   background-color: #CECCCC;
   height: 72vmin;
-  overflow: scroll;
   margin: 2vmin;
   border-radius: 5vmin;
 }
@@ -287,6 +286,24 @@ html {
   font-size: 2.5vmin;
   padding-left: 4vmin;
   padding-right: 4vmin;
+}
+
+/* Handle */
+/* width */
+div *::-webkit-scrollbar {
+  width: 1vmin;
+}
+
+/* Track */
+div *::-webkit-scrollbar-track {
+  margin-top: 4vmin;
+  margin-bottom: 4vmin;
+}
+ 
+/* Handle */
+div *::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: white;
 }
 
 .Services-images {
@@ -364,7 +381,7 @@ input[type=text], select, textarea {
   width: 75vmin;
   background-color: #CECCCC;
   height: 20vmin;
-  overflow: scroll;
+  overflow: auto;
   margin: 2vmin;
   border-radius: 5vmin;
   overscroll-behavior: contain;
