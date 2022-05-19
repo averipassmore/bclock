@@ -126,10 +126,10 @@ html {
   display: flex;
 }
 
-@media only screen and (max-width:480px) { 
+@media only screen and (max-width:1000px) { 
   .Nav-button {
     position: relative;
-    right: 5vmin;
+    right: 0vmin;
     background-color: rgb(246, 243, 242);
     height: 6vmin;
     width: 12vmin;
