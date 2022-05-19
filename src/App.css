@@ -19,12 +19,13 @@ html {
   top: 0;
 }
 
-.Instagram-logo{
-  max-width: 5vmin;
-  max-height: 5vmin;
+.Instagram-logo {
+  width: 4vmin;
+  height: 4vmin;
   display: flex;
   align-items: right;
   vertical-align: middle;
+  padding: 1vmin;
 }
 
 .Instagram-wrapper {
@@ -47,12 +48,13 @@ html {
 }
 
 .Email-logo {
-  max-width: 5vmin;
-  max-height: 5vmin;
+  width: 5vmin;
+  height: 5vmin;
   display: flex;
   align-items: right;
   vertical-align: middle;
-  padding-right: 1%;
+  position: relative;
+  top: .5vmin;
 }
 
 .Email-wrapper {
@@ -162,6 +164,18 @@ html {
   cursor: pointer;
   position: relative;
   top: 20vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.First-section-button-text {
+  text-decoration: none;
+  color: black;
+  font-family: Merienda;
+  font-weight: bolder;
+  font-size: 4.5vmin;
+  vertical-align: middle;
 }
 
 .First-section-text {
@@ -305,7 +319,7 @@ html {
   height: 80vmin;
   width: 110vmin;
   border-radius: 3vmin;
-  top: 2vmin
+  top: 2vmin;
 }
 
 input[type=text], select, textarea {

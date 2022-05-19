@@ -20,12 +20,12 @@ const TopBar = () => {
           <div className="Logos">
             <div className="Instagram-wrapper">
               <a href="https://www.instagram.com/bclockskeysguns/">
-                <img src="https://www.designbust.com/download/1006/png/instagram_logo_transparent_background_png512.png" className="Instagram-logo"></img>
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" className="Instagram-logo"></img>
               </a>
               <div>Follow us!</div>
             </div>
             <div className="Email-wrapper">
-              <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" className="Instagram-logo" onClick={copyEmail}></img>            
+              <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" className="Email-logo" onClick={copyEmail}></img>            
             </div>
           </div>
         </div>
