@@ -4,6 +4,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* white-space:nowrap; */
 }
 
 .Top-bar {
@@ -17,12 +19,12 @@ html {
   width: 100%;
   z-index: 3;
   top: 0;
+  max-width: 100%;
 }
 
 .Instagram-logo {
   width: 4vmin;
   height: 4vmin;
-  display: flex;
   align-items: right;
   vertical-align: middle;
   padding: 1vmin;
@@ -71,7 +73,7 @@ html {
   color: black;
   font-family: Merienda;
   font-weight: bolder;
-  padding-left: 1%;
+  padding-left: 0%;
   font-size: 2vmin;
   text-decoration: none;
 }
@@ -87,13 +89,15 @@ html {
   width: 100%;
   top: 5vmin;
   z-index: 2;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .Business-logo {
   position: relative;
   max-width: 10vmin;
   max-height: 10vmin;
-  left: 10vmin;
+  left: 5vmin;
 }
 
 .Quote-button-text {
@@ -119,6 +123,26 @@ html {
   display: flex;
 }
 
+@media only screen and (max-width:480px) { 
+  .Nav-button {
+    position: relative;
+    right: 5vmin;
+    background-color: rgb(246, 243, 242);
+    height: 6vmin;
+    width: 12vmin;
+    border-radius: 2vmin;
+    color: #282c34;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* a.bt{
+    display: block;
+    padding: 0;
+  } */
+}
+
 .Nav-text {
   font-family: Merienda;
   font-weight: bolder;
@@ -142,10 +166,13 @@ html {
 
 .First-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #282c34;
-  width: 100%;
   height: 75vmin;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .Wrapper-div {
@@ -162,8 +189,8 @@ html {
   font-weight: bolder;
   font-size: 4vmin;
   cursor: pointer;
-  position: relative;
-  top: 20vmin;
+  position: absolute;
+  top: 30vmin;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,25 +230,40 @@ html {
   inline-size: 100vmin;
   text-align: center;
   color: white;
-  width: 101vmin
+  width: 101vmin;
 }
 
 .Skelly-left {
-  position: absolute;
-  height: 70vmin;
-  left: 5vmin;
-  top: 20vmin;
-  width: 63vmin;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .Skelly-right {
-  position: absolute;
-  height: 70vmin;
-  right: 5vmin;
+  position: relative;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  top: 20vmin;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.Skelly-left-wrapper {
+  position: relative;
+  display: flex;
+  height: 70vmin;
   width: 63vmin;
+  right: 20vmin;
+  overflow: hidden;
+}
+
+.Skelly-right-wrapper {
+  position: relative;
+  display: flex;
+  height: 70vmin;
+  width: 63vmin;
+  left: 20vmin;
+  overflow: hidden;
 }
 
 .First-section-footer {
@@ -356,16 +398,7 @@ div *::-webkit-scrollbar-thumb {
   top: 2vmin;
 }
 
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+
 
 .Reviews-wrapper {
   background-color: #282c34;

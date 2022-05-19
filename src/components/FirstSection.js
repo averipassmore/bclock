@@ -26,8 +26,13 @@ const FirstSection = () => {
         <div className="First-section-button">
           <Link to='/quote' className="First-section-button-text">Get a Quote!</Link>
         </div>
-        <img src={skelly} className="Skelly-left" alt=""></img>
-        <img src={skelly} className="Skelly-right" alt=""></img>
+        <div className="Skelly-left-wrapper">
+          <img src={skelly} className="Skelly-left" alt=""></img>
+        </div>
+        <div className="Skelly-right-wrapper">
+          <img src={skelly} className="Skelly-right" alt=""></img>
+        </div>
+        
         <h2 className="First-section-text-2">Under construction! Feel free to look around!</h2>
         {/* <h1 className="First-section-text-2">"For all your security needs!"</h1> */}
       </div>
