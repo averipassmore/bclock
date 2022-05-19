@@ -10,13 +10,15 @@ const QuoteForm = () => {
           <input type={'text'} name='name'></input>
 
           <label for='email'>Email</label>
-          <input type={'text'} name='email'></input>
+          <input type={'email'} name='email'></input>
 
           <label for='phone'>Phone</label>
-          <input type={'text'} name='phone'></input>
+          <input type={'tel'} name='phone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></input>
 
           <label for='summary'>How can we help?</label>
           <input type={'text'} name='summary'></input>
+
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
