@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const TopBar = () => {
+
   const copyEmail = () => {
     navigator.clipboard.writeText('bckeyz@yahoo.com')
     .then(() => { alert('Copied email to clipboard')});
@@ -11,12 +12,10 @@ const TopBar = () => {
     .then(() => { alert('Copied phone number to clipboard')});
   }
   return (
-    <div>
+    <div id="Top">
         <div className="Top-bar">
-          {/* <div> */}
             <a href="https://www.google.com/maps/place/Boulder+City+Lock+And+Key/@35.9743439,-114.8451608,17z/data=!3m1!4b1!4m5!3m4!1s0x80c92ad585831789:0x32847d69817ff149!8m2!3d35.9743396!4d-114.8429721
 " className="Address">916 Nevada Way Suite 4, Boulder City, NV 89005</a>
-          {/* </div> */}
           <div className="Phone-number" onClick={copyPhoneNumber}>(702) 682 - 8822</div>
           <div className="Logos">
             <div className="Instagram-wrapper">
@@ -32,8 +31,6 @@ const TopBar = () => {
         </div>
     </div>
   )
-  //https://www.google.com/maps/dir/?api=1&Boulder+City+Lock+And+Key/
-  //https://www.google.com/maps/place/Boulder+City+Lock+And+Key/@35.9743439,-114.8451608,17z/data=!3m1!4b1!4m5!3m4!1s0x80c92ad585831789:0x32847d69817ff149!8m2!3d35.9743396!4d-114.8429721
 }
 
 export default TopBar;

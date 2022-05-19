@@ -9,7 +9,7 @@ html {
 .Top-bar {
   display: flex;
   flex-direction: row;
-  background-color: #282c34;
+  background-color: #CECCCC;
   justify-content: space-between;
   align-items: center;
   height: 5vmin;
@@ -66,10 +66,12 @@ html {
 }
 
 .Address {
-  color: white;
+  color: black;
   font-family: Merienda;
   font-weight: bolder;
   padding-left: 1%;
+  font-size: 2vmin;
+  text-decoration: none;
 }
 
 .Navbar {
@@ -86,31 +88,33 @@ html {
 }
 
 .Business-logo {
+  position: relative;
   max-width: 10vmin;
   max-height: 10vmin;
-  display: flex;
-  align-items: right;
-  vertical-align: middle;
-  padding-left: 8%;
+  left: 10vmin;
 }
 
-.Quote-button {
-  background-color: rgb(246, 243, 242);
-  display: block;
-  height: 8vmin;
-  width: 25vmin;
-  border-radius: 50%;
-  border: .4vmin solid black;
-  color: #282c34;
+.Quote-button-text {
+  text-decoration: none;
+  color: black;
   font-family: Merienda;
   font-weight: bolder;
-  cursor: pointer;
+  font-size: 2vmin;
+  vertical-align: middle;
 }
 
 .Nav-button {
-  padding-right: 8%;
+  position: relative;
+  right: 5vmin;
+  background-color: rgb(246, 243, 242);
+  height: 8vmin;
+  width: 20vmin;
+  border-radius: 2vmin;
+  color: #282c34;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  text-align: center;
 }
 
 .Nav-text {
@@ -118,28 +122,28 @@ html {
   font-weight: bolder;
   color: white;
   text-decoration: none;
+  position: relative;
+  left: 6vmin;
+  font-size: 2.5vmin;
 }
 
 .Phone-number {
-  padding-right: 25%;
-  color: white;
+  position: relative;
+  left: -17vmin;
+  color: black;
   font-family: Merienda;
   font-weight: bolder;
   text-decoration: none;
   cursor: copy;
-}
-
-.Background {
-  object-fit: contain;
-  width: 150vmin;
-  height: 75vmin;
-  display: flex;
+  font-size: 2vmin;
 }
 
 .First-section {
   display: flex;
   justify-content: center;
   background-color: #282c34;
+  width: 100%;
+  height: 75vmin;
 }
 
 .Wrapper-div {
@@ -150,32 +154,63 @@ html {
   background-color: rgb(246, 243, 242);
   height: 16vmin;
   width: 40vmin;
-  border-radius: 50%;
-  border: .4vmin solid black;
+  border-radius: 3vmin;
   color: #282c34;
   font-family: Merienda;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 4vmin;
   cursor: pointer;
-  position: absolute;
-  top: 50vmin;
+  position: relative;
+  top: 20vmin;
 }
 
 .First-section-text {
   font-family: Merienda;
   font-weight: bolder;
-  font-size: 4vw;
+  font-size: 4vmin;
   position: absolute;
-  top: 20vmin;
+  top: 14vmin;
   z-index: 1;
   overflow-wrap: break-word;
   inline-size: 100vmin;
   text-align: center;
+  color: white;
+  width: 101vmin
+}
+
+.First-section-text-2 {
+  font-family: Merienda;
+  font-weight: bolder;
+  font-size: 4vmin;
+  position: absolute;
+  top: 75vmin;
+  z-index: 1;
+  overflow-wrap: break-word;
+  inline-size: 100vmin;
+  text-align: center;
+  color: white;
+  width: 101vmin
+}
+
+.Skelly-left {
+  position: absolute;
+  height: 70vmin;
+  left: 5vmin;
+  top: 20vmin;
+}
+
+.Skelly-right {
+  position: absolute;
+  height: 70vmin;
+  right: 5vmin;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  top: 20vmin;
 }
 
 .First-section-footer {
   height: 10vmin;
-  background-color: #65686e;
+  background-color: #282c34;
   display: flex;
   place-content: center;
 }
@@ -190,6 +225,7 @@ html {
   background-size: cover;
   bottom: 2vmin;
   z-index: 4;
+  filter: brightness(0) invert(1)
 }
 
 .Navigate-down-button:hover {
@@ -202,11 +238,11 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #65686e;
+  background-color: #282c34;
   text-align: center;
   color: white;
   position: relative;
-  top: -1;
+  font-family: Merienda;
 }
 
 .Services-content {
@@ -215,30 +251,40 @@ html {
   justify-content: space-between;
   color: black;
   flex-wrap: wrap;
-  padding: 3vmin;
+  padding: 5vmin;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .Services-cell {
   width: 35vmin;
-  background-color: white;
-  height: 74vmin;
+  background-color: #CECCCC;
+  height: 72vmin;
   overflow: scroll;
   margin: 2vmin;
   border-radius: 5vmin;
+}
+
+.Services-cell h1{
+  font-size: 4.5vmin;
+}
+
+.Services-cell p{
+  font-size: 2.5vmin;
+  padding-left: 4vmin;
+  padding-right: 4vmin;
 }
 
 .Services-images {
   max-width: 15vmin;
   max-height: 15vmin;
   position: relative;
-  top: 2vmin
+  top: 2vmin;
 }
 
 .Services-title {
   position: relative;
-  /* top: 2vmin; */
+  top: 1vmin;
 }
 
 .Quote-title {
@@ -271,5 +317,4 @@ input[type=text], select, textarea {
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  
 }
