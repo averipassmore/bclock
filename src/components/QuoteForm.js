@@ -5,7 +5,7 @@ const QuoteForm = () => {
     <div>
       <div className="Wrapper-div"></div>
       <div className="Quote-form-wrapper">
-        <form>
+        <form name="contact" netlify>
           <label for='name'>Name</label>
           <input type={'text'} name='name'></input>
 
