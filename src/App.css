@@ -347,3 +347,58 @@ input[type=text], select, textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
+.Reviews-wrapper {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  flex-wrap: wrap;
+  padding: 5vmin;
+  position: relative;
+  padding-top: 10vmin;
+}
+
+.Reviews-cell {
+  width: 75vmin;
+  background-color: #CECCCC;
+  height: 20vmin;
+  overflow: scroll;
+  margin: 2vmin;
+  border-radius: 5vmin;
+  overscroll-behavior: contain;
+}
+
+.Reviews-title {
+  position: absolute;
+  left: 60vmin;
+  font-family: Merienda;
+  color: white;
+  top: 1vmin
+}
+
+.Reviews-image {
+  height: 10vmin;
+  width: 10vmin;
+  border-radius: 50%;
+  position: relative;
+  padding: 2vmin;
+  border-style: inset;
+  border-width: 1vmin;
+  top: 2vmin;
+  left: 2vmin;
+}
+
+.Reviews-text {
+  position: relative;
+  width: 53vmin;
+  padding-left: 20vmin;
+  top: -17vmin;
+  font-family: Merienda;
+  height: 0vmin;
+}
+
+.Reviews-text p{
+  font-size: 2.5vmin;
+}

@@ -10,7 +10,7 @@ const FirstSection = () => {
       <div className="First-section">
         <p className="First-section-text">Best Locksmith and Gun Dealer in Southern Nevada</p>
         <div className="First-section-button">
-          <Link to='/quote' className="First-section-button-text">Get a quote!</Link>
+          <Link to='/quote' className="First-section-button-text">Get a Quote!</Link>
         </div>
         <img src={skelly} className="Skelly-left"></img>
         <img src={skelly} className="Skelly-right"></img>
