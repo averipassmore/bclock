@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const TopBar = () => {
 
@@ -20,12 +20,12 @@ const TopBar = () => {
           <div className="Logos">
             <div className="Instagram-wrapper">
               <a href="https://www.instagram.com/bclockskeysguns/">
-                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" className="Instagram-logo"></img>
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" className="Instagram-logo"></img>
               </a>
               <div>Follow us!</div>
             </div>
             <div className="Email-wrapper">
-              <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" className="Email-logo" onClick={copyEmail}></img>            
+              <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="" className="Email-logo" onClick={copyEmail}></img>            
             </div>
           </div>
         </div>

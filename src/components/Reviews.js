@@ -6,7 +6,7 @@ const Reviews = () => {
       <div className="Reviews-wrapper">
       <h1 className="Reviews-title">What customers say about us...</h1>
         <div className="Reviews-cell">
-          <img src="https://s3-media0.fl.yelpcdn.com/photo/qF2psP9KgBNDW5WNXLkcag/120s.jpg" className="Reviews-image"></img>
+          <img src="https://s3-media0.fl.yelpcdn.com/photo/qF2psP9KgBNDW5WNXLkcag/120s.jpg" alt="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" className="Reviews-image"></img>
           <div className="Reviews-text">
           <h1>Linda A.</h1>
           <p>
@@ -22,7 +22,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="Reviews-cell">
-          <img src="https://s3-media0.fl.yelpcdn.com/photo/w6_8WcdGttcoE3KJyc8ZTQ/120s.jpg" className="Reviews-image"></img>
+          <img src="https://s3-media0.fl.yelpcdn.com/photo/w6_8WcdGttcoE3KJyc8ZTQ/120s.jpg" alt="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" className="Reviews-image"></img>
             <div className="Reviews-text">
             <h1>Cathy D.</h1>
             <p>
@@ -32,7 +32,7 @@ const Reviews = () => {
             </div>
           </div>
         <div className="Reviews-cell">
-          <img src="https://s3-media0.fl.yelpcdn.com/photo/Bv_w5ncxXEnHu2Wmpgjyig/120s.jpg" className="Reviews-image"></img>
+          <img src="https://s3-media0.fl.yelpcdn.com/photo/Bv_w5ncxXEnHu2Wmpgjyig/120s.jpg" alt="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" className="Reviews-image"></img>
             <div className="Reviews-text">
             <h1>Brie P.</h1>
             <p>
@@ -43,7 +43,7 @@ const Reviews = () => {
             </div>
         </div>
         <div className="Reviews-cell">
-        <img src="https://s3-media0.fl.yelpcdn.com/buphoto/VunliyjON_4NJ4YFvcIadQ/180s.jpg" className="Reviews-image"></img>
+        <img src="https://s3-media0.fl.yelpcdn.com/buphoto/VunliyjON_4NJ4YFvcIadQ/180s.jpg" alt="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" className="Reviews-image"></img>
             <div className="Reviews-text">
             <h1>Sherill G.</h1>
             <p>
@@ -54,7 +54,7 @@ const Reviews = () => {
             </div>
         </div>
         <div className="Reviews-cell">
-        <img src="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" className="Reviews-image"></img>
+        <img src="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" alt="" className="Reviews-image"></img>
             <div className="Reviews-text">
             <h1>Ella W.</h1>
             <p>
@@ -67,7 +67,7 @@ const Reviews = () => {
             </div>
         </div>
         <div className="Reviews-cell">
-        <img src="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" className="Reviews-image"></img>
+        <img src="https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=" alt="" className="Reviews-image"></img>
             <div className="Reviews-text">
             <h1>Sarita G.</h1>
             <p>
