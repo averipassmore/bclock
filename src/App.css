@@ -211,6 +211,7 @@ html {
   height: 70vmin;
   left: 5vmin;
   top: 20vmin;
+  width: 63vmin;
 }
 
 .Skelly-right {
@@ -220,6 +221,7 @@ html {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   top: 20vmin;
+  width: 63vmin;
 }
 
 .First-section-footer {
