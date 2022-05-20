@@ -8,6 +8,7 @@ const QuoteForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    //works just dont want to use all of the emails
     // emailjs.sendForm('service_vxo5ko4', 'template_bnbzl4f', form.current, 'Um-6jVm3sb72fybJ3')
     //   .then((result) => {
     //       console.log(result.text);
