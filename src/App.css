@@ -8,6 +8,8 @@ html {
   /* white-space:nowrap; */
 }
 
+
+/* Top bar styling */
 .Top-bar {
   display: flex;
   flex-direction: row;
@@ -81,6 +83,8 @@ html {
   max-width: 30%;
 }
 
+
+/* Navbar styling */
 .Navbar {
   display: flex;
   flex-direction: row;
@@ -166,6 +170,8 @@ html {
   top: 2.5vmin;
 }
 
+
+/* First section styling */
 .First-section {
   display: flex;
   flex-direction: row;
@@ -276,6 +282,8 @@ html {
   place-content: center;
 }
 
+
+/* navigate down button styling */
 .Navigate-down-button {
   position: fixed;
   width: 6vmin;
@@ -295,6 +303,8 @@ html {
   transition-duration: 400ms;
 }
 
+
+/* services styling */
 .Services {
   display: flex;
   flex-direction: column;
@@ -381,27 +391,8 @@ div *::-webkit-scrollbar-thumb {
   font-size: 4.5vmin;
 }
 
-.Quote-title {
-  position: relative;
-  top: 15vmin;
-  text-align: center;
-}
 
-/* .Quote-form-wrapper {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.Quote-form {
-  position: relative;
-  background-color: red;
-  height: 80vmin;
-  width: 110vmin;
-  border-radius: 3vmin;
-  top: 2vmin;
-} */
-
+/* reviews styling */
 .Reviews-wrapper {
   background-color: #282c34;
   display: flex;
@@ -465,12 +456,91 @@ div *::-webkit-scrollbar-thumb {
   font-size: 5vmin;
 }
 
+
+/* quote form styling */
 .Quote-form-background {
-  /* display: flex; */
   background-color: #282c34;
   position: absolute;
   top: 15vmin;
   width: 100%;
   max-height: 85vmin;
   height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.Quote-form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #ccc;
+  /* text-align: center; */
+  align-items: center;
+  width: 100vmin;
+  height: 60vmin;
+  border-radius: 3vmin;
+}
+
+.Quote-form input[type=submit] {
+  position: relative;
+  background-color: #282c34;
+  color: white;
+  height: 10vmin;
+  width: 40vmin;
+  top: 3vmin;
+  border: white;
+  border-radius: 2.5vmin;
+  cursor: pointer;
+  font-size: 2.5vmin;
+}
+
+.Quote-form input[type=text] {
+  position: relative;
+  width: 88vmin;
+  padding: .8vmin;
+  font-size: 2vmin;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box; 
+  box-sizing:content-box;
+}
+
+.Quote-form #typeOfService {
+  position: relative;
+  width: 88.5vmin;
+  padding: .8vmin;
+  font-size: 2vmin;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box; 
+  box-sizing:content-box;
+}
+
+.Quote-form label {
+  margin-top: .5vmin;
+  margin-bottom: .5vmin;
+  font-size: 1.8vmin;
+  float: left;
+  width: 88vmin;
+  color: #282c34;
+}
+
+.Quote-form textarea {
+  position: relative;
+  width: 88.5vmin;
+  padding: .8vmin;
+  font-size: 2vmin;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box; 
+  box-sizing:content-box;
+  height: 10vmin;
+}
+
+.Quote-form-title {
+  position: absolute;
+  color: #ccc;
+  top: 2vmin;
+  z-index: 4;
 }
