@@ -540,7 +540,6 @@ div *::-webkit-scrollbar-thumb {
 
 .Quote-form-title {
   position: absolute;
-  color: #ccc;
+  color: white;
   top: 2vmin;
-  z-index: 4;
 }
