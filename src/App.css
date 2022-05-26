@@ -39,6 +39,12 @@ html {
   cursor: pointer;
 }
 
+.Instagram-logo:hover {
+  filter: invert(1);
+  opacity: 1;
+  -webkit-transition : -webkit-filter 300ms linear;
+}
+
 .Instagram-wrapper div{
   position: absolute;
   opacity: 1;
@@ -49,7 +55,6 @@ html {
 }
 
 .Instagram-wrapper:hover div{
-  opacity: 1;
   visibility: visible;
 }
 
@@ -61,6 +66,12 @@ html {
   vertical-align: middle;
   position: relative;
   opacity: .75;
+}
+
+.Email-logo:hover {
+  filter: invert(1);
+  opacity: 1;
+  -webkit-transition : -webkit-filter 300ms linear;
 }
 
 .Email-wrapper {
@@ -83,6 +94,29 @@ html {
   font-size: 2vmin;
   text-decoration: none;
   max-width: 30%;
+}
+
+.Address:hover {
+  color: white;
+  transform: scale(1.05);
+  -webkit-transition : color 500ms, transform 500ms;
+}
+
+.Phone-number {
+  position: fixed;
+  color: #282c34;
+  font-family: Merienda;
+  font-weight: bolder;
+  cursor: copy;
+  font-size: 2vmin;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Phone-number:hover {
+  color: white;
+  transform: scale(1.05) translateX(-48%);
+  -webkit-transition : color 500ms, transform 500ms;
 }
 
 
@@ -132,6 +166,20 @@ html {
   display: flex;
 }
 
+.Nav-button:hover{
+  transform: scale(1);
+  background-color: #282c34;
+  border-style: solid;
+  border-color: white;
+  border-width: .5vmin;
+  -webkit-transition : transform 500ms, background-color 750ms, border-color 500ms, border-width 1000ms;
+}
+
+.Nav-button:hover .Quote-button-text {
+  color: white;
+  -webkit-transition : color 500ms;
+}
+
 @media only screen and (max-width:1000px) { 
   .Nav-button {
     position: relative;
@@ -157,21 +205,20 @@ html {
   font-size: 2.5vmin;
 }
 
-.Phone-number {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  width: fit-content;
-  color: #282c34;
+.Nav-text-seperator {
   font-family: Merienda;
   font-weight: bolder;
+  color: white;
   text-decoration: none;
-  cursor: copy;
-  font-size: 2vmin;
-  transform: translate(-50%, -50%);
-  top: 2.5vmin;
+  position: relative;
+  left: 6vmin;
+  font-size: 2.5vmin;
 }
 
+.Nav-text:hover {
+  transform: scale(1.25);
+  -webkit-transition: transform 500ms;
+}
 
 /* First section styling */
 .First-section {
@@ -205,6 +252,20 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.First-section-button:hover{
+  transform: scale(1);
+  background-color: #282c34;
+  border-style: solid;
+  border-color: white;
+  border-width: .5vmin;
+  -webkit-transition : transform 500ms, background-color 750ms, border-color 500ms, border-width 1000ms;
+}
+
+.First-section-button:hover .First-section-button-text {
+  color: white;
+  -webkit-transition : color 500ms;
 }
 
 .First-section-button-text {
@@ -348,13 +409,11 @@ html {
   font-weight: bold;
   list-style: none;
   position: relative;
-  padding-left: 0em;
-  /* left: 5vmin; */
 }
 
 .Services-cell ul li::before {
   content: '✓';
-  margin-left: -4vmin;
+  margin-left: -3.75vmin;
 }
 
 
@@ -474,14 +533,14 @@ div *::-webkit-scrollbar-thumb {
 .Quote-form-background {
   background-color: #282c34;
   position: absolute;
-  top: 15vmin;
   width: 100%;
-  max-height: 85vmin;
   height: 100%;
+  bottom: 0vmin;
   justify-content: center;
   display: flex;
   align-items: center;
   flex-direction: column;
+  scroll-behavior: none;
 }
 
 .Quote-form {
@@ -498,8 +557,8 @@ div *::-webkit-scrollbar-thumb {
 
 .Quote-form input[type=submit] {
   position: relative;
-  background-color: #282c34;
-  color: white;
+  background-color: white;
+  color: black;
   height: 10vmin;
   width: 40vmin;
   top: 2vmin;
@@ -508,6 +567,17 @@ div *::-webkit-scrollbar-thumb {
   cursor: pointer;
   font-size: 3vmin;
   font-family: merienda;
+  border-style: solid;
+  border-color: #282c34;
+}
+
+.Quote-form input[type=submit]:hover {
+  background-color: #282c34;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: .7vmin;
+  -webkit-transition : color 750ms, background-color 750ms, border-color 500ms, border-width 1000ms;
 }
 
 .Quote-form input[type=text] {
@@ -561,4 +631,34 @@ div *::-webkit-scrollbar-thumb {
   color: white;
   font-family: merienda;
   font-size: 4vmin;
+}
+
+.Quote-navbar {
+  display: flex;
+  background-color: #65686e;
+  align-items: center;
+  height: 10vmin;
+  position: fixed;
+  width: 100%;
+  top: 5vmin;
+  z-index: 2;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.Quote-navbar #p{
+  position: fixed;
+  font-family: Merienda;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vmin;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Quote-navbar:hover #p{
+  color: white;
+  transform: scale(1.25) translateX(-40%);
+  -webkit-transition : color 500ms, transform 500ms;
 }

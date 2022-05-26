@@ -14,10 +14,10 @@ const Services = () => {
                 </div>
                 <h1>Automotive</h1>
                 <ul>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lockouts</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Key Copying</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Antiques</li>
+                  <li>&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                  <li>&nbsp;&nbsp;&nbsp;Lockouts</li>
+                  <li>&nbsp;&nbsp;&nbsp;Key Copying</li>
+                  <li>&nbsp;&nbsp;&nbsp;Antiques</li>
                 </ul>
               </div>
               <div className="Services-cell">
@@ -26,11 +26,11 @@ const Services = () => {
                 </div>
                 <h1>Residential</h1>
                 <ul>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lockouts</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Key Copying</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lock Changes and Rekeying</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Safe Openings and Combination Changes</li>
+                  <li>&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                  <li>&nbsp;&nbsp;&nbsp;Lockouts</li>
+                  <li>&nbsp;&nbsp;&nbsp;Key Copying</li>
+                  <li>&nbsp;&nbsp;&nbsp;Lock Changes and Rekeying</li>
+                  <li>&nbsp;&nbsp;&nbsp;Safe Openings and Combination Changes</li>
                 </ul>
               </div>
               <div className="Services-cell">
@@ -39,11 +39,11 @@ const Services = () => {
                 </div>
                 <h1>Commmercial</h1>
                 <ul>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lockouts</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Key Copying</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lock Changes and Rekeying</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Safe Openings and Combination Changes</li>
+                  <li>&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                  <li>&nbsp;&nbsp;&nbsp;Lockouts</li>
+                  <li>&nbsp;&nbsp;&nbsp;Key Copying</li>
+                  <li>&nbsp;&nbsp;&nbsp;Lock Changes and Rekeying</li>
+                  <li>&nbsp;&nbsp;&nbsp;Safe Openings and Combination Changes</li>
                 </ul>
               </div>
               <div className="Services-cell">
@@ -52,10 +52,10 @@ const Services = () => {
                 </div>
                 <h1>Guns</h1>
                 <ul>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Licensed FFL Dealer</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Buy, Sell, or Trade!</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Special Order Guns and Ammo</li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Black Rifle Coffee Distributor</li>
+                  <li>&nbsp;&nbsp;&nbsp;Licensed FFL Dealer</li>
+                  <li>&nbsp;&nbsp;&nbsp;Buy, Sell, or Trade!</li>
+                  <li>&nbsp;&nbsp;&nbsp;Special Order Guns and Ammo</li>
+                  <li>&nbsp;&nbsp;&nbsp;Black Rifle Coffee Distributor</li>
                 </ul>
               </div>
           </div>
