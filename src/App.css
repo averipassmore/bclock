@@ -32,6 +32,7 @@ html {
   position: relative;
   display: flex;
   opacity: .75;
+  transition: 1000ms ease;
 }
 
 .Instagram-wrapper {
@@ -66,6 +67,7 @@ html {
   vertical-align: middle;
   position: relative;
   opacity: .75;
+  transition: 1000ms ease;
 }
 
 .Email-logo:hover {
@@ -94,6 +96,7 @@ html {
   font-size: 2vmin;
   text-decoration: none;
   max-width: 30%;
+  transition: 500ms ease;
 }
 
 .Address:hover {
@@ -111,6 +114,7 @@ html {
   font-size: 2vmin;
   left: 50%;
   transform: translateX(-50%);
+  transition: 500ms ease;
 }
 
 .Phone-number:hover {
@@ -164,15 +168,15 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: 500ms ease;
 }
 
 .Nav-button:hover{
-  transform: scale(1);
-  background-color: #282c34;
+  background-color:#65686e;
   border-style: solid;
   border-color: white;
-  border-width: .5vmin;
-  -webkit-transition : transform 500ms, background-color 750ms, border-color 500ms, border-width 1000ms;
+  border-width: .2vmin;
+  -webkit-transition : border-width 1000ms, background-color 750ms, border-color 1000ms, border-width 1000ms;
 }
 
 .Nav-button:hover .Quote-button-text {
@@ -252,10 +256,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 500ms ease;
 }
 
 .First-section-button:hover{
-  transform: scale(1);
+  transform: scale(1.1);
   background-color: #282c34;
   border-style: solid;
   border-color: white;
@@ -569,6 +574,7 @@ div *::-webkit-scrollbar-thumb {
   font-family: merienda;
   border-style: solid;
   border-color: #282c34;
+  transition: 500ms ease;
 }
 
 .Quote-form input[type=submit]:hover {
@@ -577,7 +583,8 @@ div *::-webkit-scrollbar-thumb {
   border-style: solid;
   border-color: white;
   border-width: .7vmin;
-  -webkit-transition : color 750ms, background-color 750ms, border-color 500ms, border-width 1000ms;
+  transform: scale(1.2);
+  -webkit-transition : transform 500ms ease, color 750ms, background-color 750ms, border-color 500ms, border-width 1000ms;
 }
 
 .Quote-form input[type=text] {
