@@ -468,6 +468,7 @@ div *::-webkit-scrollbar-thumb {
   justify-content: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .Quote-form {
@@ -475,11 +476,11 @@ div *::-webkit-scrollbar-thumb {
   position: relative;
   flex-direction: column;
   background-color: #ccc;
-  /* text-align: center; */
   align-items: center;
   width: 100vmin;
   height: 60vmin;
   border-radius: 3vmin;
+  font-family: merienda;
 }
 
 .Quote-form input[type=submit] {
@@ -488,11 +489,12 @@ div *::-webkit-scrollbar-thumb {
   color: white;
   height: 10vmin;
   width: 40vmin;
-  top: 3vmin;
+  top: 2vmin;
   border: white;
   border-radius: 2.5vmin;
   cursor: pointer;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
+  font-family: merienda;
 }
 
 .Quote-form input[type=text] {
@@ -504,6 +506,7 @@ div *::-webkit-scrollbar-thumb {
   -moz-box-sizing:content-box;
   -webkit-box-sizing:content-box; 
   box-sizing:content-box;
+  font-family: merienda;
 }
 
 .Quote-form #typeOfService {
@@ -515,14 +518,15 @@ div *::-webkit-scrollbar-thumb {
   -moz-box-sizing:content-box;
   -webkit-box-sizing:content-box; 
   box-sizing:content-box;
+  font-family: merienda;
 }
 
 .Quote-form label {
   margin-top: .5vmin;
   margin-bottom: .5vmin;
-  font-size: 1.8vmin;
+  font-size: 2vmin;
   float: left;
-  width: 88vmin;
+  width: 90vmin;
   color: #282c34;
 }
 
@@ -536,10 +540,12 @@ div *::-webkit-scrollbar-thumb {
   -webkit-box-sizing:content-box; 
   box-sizing:content-box;
   height: 10vmin;
+  font-family: merienda;
 }
 
 .Quote-form-title {
-  position: absolute;
+  position: relative;
   color: white;
-  top: 2vmin;
+  font-family: merienda;
+  font-size: 4vmin;
 }

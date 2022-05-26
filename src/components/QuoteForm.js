@@ -1,8 +1,10 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import { useNavigate } from "react-router-dom";
 // import emailjs from 'emailjs-com';
 
 const QuoteForm = () => {
+  const [label, setLabel] = useState('Please describe in detail your request');
+
   const form = useRef();
   let navigate = useNavigate();
 
@@ -21,6 +23,17 @@ const QuoteForm = () => {
     navigate('/');
   };
 
+  const input = (e) => {
+    console.log(e.target.value);
+    if (e.target.value === "guns") {
+      setLabel("Please include the brand, model, year (if available), and a description of your request")
+    } else if (e.target.value === "automotive") {
+      setLabel("Please include the make, model, year, and a description of your request")
+    } else {
+      setLabel('Please describe in detail your request')
+    }
+
+  }
   return (
     <div>
       <div className="Wrapper-div"></div>
@@ -36,13 +49,13 @@ const QuoteForm = () => {
           {/* <input type="tel" name="user_phone" pattern="[0-9]{10}"/> */}
           <input type="text" name="user_phone"/>
           <label for="typeOfService">Type of Service</label>
-          <select id="typeOfService" name="typeOfService">
+          <select id="typeOfService" name="typeOfService" onChange={input}>
             <option value={'automotive'}>automotive</option>
             <option value={'residential'}>residential</option>
             <option value={'commercial'}>commercial</option>
             <option value={'guns'}>guns</option>
           </select>
-          <label>Message</label>
+          <label>{label}</label>
           <textarea name="message" />
           <input type="submit" value="Send" />
         </form>
