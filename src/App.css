@@ -555,7 +555,7 @@ div *::-webkit-scrollbar-thumb {
   background-color: #ccc;
   align-items: center;
   width: 100vmin;
-  height: 60vmin;
+  height: 61vmin;
   border-radius: 3vmin;
   font-family: merienda;
 }
@@ -582,8 +582,8 @@ div *::-webkit-scrollbar-thumb {
   color: white;
   border-style: solid;
   border-color: white;
-  border-width: .7vmin;
-  transform: scale(1.2);
+  border-width: .5vmin;
+  -webkit-transform: scale(1.2);
   -webkit-transition : transform 500ms ease, color 750ms, background-color 750ms, border-color 500ms, border-width 1000ms;
 }
 
