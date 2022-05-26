@@ -13,28 +13,50 @@ const Services = () => {
                   <img src="https://www.freeiconspng.com/thumbs/car-icon-png/car-icon-png-25.png" alt="" className="Services-images"></img>
                 </div>
                 <h1>Automotive</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <ul>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lockouts</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Key Copying</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Antiques</li>
+                </ul>
               </div>
               <div className="Services-cell">
                 <div className="Services-image-background">
                   <img src="https://www.pngkey.com/png/full/1-11826_home-vector-black-and-white-house-logo-black.png" alt="" className="Services-images"></img>
                 </div>
                 <h1>Residential</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <ul>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lockouts</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Key Copying</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lock Changes and Rekeying</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Safe Openings and Combination Changes</li>
+                </ul>
               </div>
               <div className="Services-cell">
                 <div className="Services-image-background">
                   <img src="https://icon-library.com/images/business-building-icon-black/business-building-icon-black-3.jpg" alt="" className="Services-images"></img>
                 </div>
                 <h1>Commmercial</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <ul>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lockouts</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Key Copying</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Lock Changes and Rekeying</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Safe Openings and Combination Changes</li>
+                </ul>
               </div>
               <div className="Services-cell">
                 <div className="Services-image-background">
                   <img src="https://images.vexels.com/media/users/3/147998/isolated/preview/91e1de59db769c7c782e5d803b80aa18-glock-pistol-grey-silhouette.png" alt="" className="Services-images"></img>
                 </div>
                 <h1>Guns</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <ul>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Licensed FFL Dealer</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Buy, Sell, or Trade!</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Special Order Guns and Ammo</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;Black Rifle Coffee Distributor</li>
+                </ul>
               </div>
           </div>
         </div>

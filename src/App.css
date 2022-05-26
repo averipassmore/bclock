@@ -31,6 +31,7 @@ html {
   padding-right: 1vmin;
   position: relative;
   display: flex;
+  opacity: .75;
 }
 
 .Instagram-wrapper {
@@ -59,6 +60,7 @@ html {
   align-items: right;
   vertical-align: middle;
   position: relative;
+  opacity: .75;
 }
 
 .Email-wrapper {
@@ -74,7 +76,7 @@ html {
 }
 
 .Address {
-  color: black;
+  color: #282c34;
   font-family: Merienda;
   font-weight: bolder;
   padding-left: 1%;
@@ -160,7 +162,7 @@ html {
   left: 50%;
   right: 50%;
   width: fit-content;
-  color: black;
+  color: #282c34;
   font-family: Merienda;
   font-weight: bolder;
   text-decoration: none;
@@ -339,11 +341,22 @@ html {
   font-size: 4.5vmin;
 }
 
-.Services-cell p{
+.Services-cell li {
   font-size: 2.5vmin;
-  padding-left: 4vmin;
-  padding-right: 4vmin;
+  text-align: left;
+  margin-top: 4vmin;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  padding-left: 0em;
+  /* left: 5vmin; */
 }
+
+.Services-cell ul li::before {
+  content: '✓';
+  margin-left: -4vmin;
+}
+
 
 /* Handle */
 /* width */
