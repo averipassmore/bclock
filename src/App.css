@@ -43,7 +43,7 @@ html {
 .Instagram-logo:hover {
   filter: invert(1);
   opacity: 1;
-  -webkit-transition : -webkit-filter 300ms linear;
+  -webkit-transition : -webkit-filter 500ms linear;
 }
 
 .Instagram-wrapper div{
@@ -238,7 +238,7 @@ html {
 
 .Wrapper-div {
   height:15vmin;
-  background-color: red;
+  background-color:#65686e;
 }
 
 .First-section-button {
