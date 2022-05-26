@@ -664,7 +664,7 @@ div *::-webkit-scrollbar-thumb {
   transform: translateX(-50%);
 }
 
-.Quote-navbar:hover #p{
+.Quote-navbar #p:hover{
   color: white;
   transform: scale(1.25) translateX(-40%);
   -webkit-transition : color 500ms, transform 500ms;
