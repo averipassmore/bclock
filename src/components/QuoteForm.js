@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import emailjs from 'emailjs-com';
 
@@ -30,7 +30,7 @@ const QuoteForm = () => {
     } else if (e.target.value === "automotive") {
       setLabel("Please include the make, model, year, and a description of your request")
     } else {
-      setLabel('Please describe in detail your request')
+      setLabel('Please leave a description of your request')
     }
 
   }
@@ -53,7 +53,7 @@ const QuoteForm = () => {
             <option value={'automotive'}>automotive</option>
             <option value={'residential'}>residential</option>
             <option value={'commercial'}>commercial</option>
-            <option value={'guns'}>guns</option>
+            <option value={'guns'}>arms</option>
           </select>
           <label>{label}</label>
           <textarea name="message" />

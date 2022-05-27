@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import TopBar from "./TopBar";
 import FirstSection from "./FirstSection";
 import QuoteForm from "./QuoteForm";
+import Footer from "./Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const MainRoutes = () => {
@@ -14,6 +15,7 @@ const MainRoutes = () => {
         <Route exact path='/' element={<FirstSection />}/>
         <Route exact path='/quote' element={<QuoteForm />}/>
       </Routes>
+      <Footer />
     </Router>
   )
 }
