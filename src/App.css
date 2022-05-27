@@ -8,6 +8,10 @@ html {
   /* white-space:nowrap; */
 }
 
+/* stops webkit transitions when window is resizing */
+.Resize-transition-stopper * {
+  transition: none !important;
+}
 
 /* Top bar styling */
 .Top-bar {
