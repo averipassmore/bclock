@@ -22,7 +22,7 @@ const FirstSection = () => {
     <div id="First-section-component">
       <div className="Wrapper-div"></div>
       <div className="First-section">
-        <p className="First-section-text">Best Locksmith and Gun Dealer in Southern Nevada</p>
+        <p className="First-section-text">Best Locksmith and Arms Dealer in Southern Nevada</p>
         <div className="First-section-button">
           <Link to='/quote' className="First-section-button-text">Get a Quote!</Link>
         </div>

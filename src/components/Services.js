@@ -50,11 +50,11 @@ const Services = () => {
                 <div className="Services-image-background">
                   <img src="https://images.vexels.com/media/users/3/147998/isolated/preview/91e1de59db769c7c782e5d803b80aa18-glock-pistol-grey-silhouette.png" alt="" className="Services-images"></img>
                 </div>
-                <h1>Guns</h1>
+                <h1>Arms</h1>
                 <ul>
                   <li>&nbsp;&nbsp;&nbsp;Licensed FFL Dealer</li>
                   <li>&nbsp;&nbsp;&nbsp;Buy, Sell, or Trade!</li>
-                  <li>&nbsp;&nbsp;&nbsp;Special Order Guns and Ammo</li>
+                  <li>&nbsp;&nbsp;&nbsp;Special Order Arms and Ammo</li>
                   <li>&nbsp;&nbsp;&nbsp;Black Rifle Coffee Distributor</li>
                 </ul>
               </div>
