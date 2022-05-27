@@ -6,6 +6,7 @@ Deployed Website: https://bouldercitylockskeysguns.netlify.app/
 This is a professional business website for Boulder City Lock and Key.
 
 For Business Inquiries contact me via Linkedin or Email!
+
 Linkedin: https://www.linkedin.com/in/averi-passmore/
 Email: averinpassmore@gmail.com
 
