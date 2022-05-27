@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import emailjs from 'emailjs-com';
+import Footer from "./Footer";
 
 const QuoteForm = () => {
   const [label, setLabel] = useState('Please describe in detail your request');
@@ -35,7 +36,7 @@ const QuoteForm = () => {
 
   }
   return (
-    <div>
+    <div className="Quote-form-page">
       <div className="Wrapper-div"></div>
       <div className="Quote-form-background">
         <h1 className="Quote-form-title">How can we help?</h1>
@@ -59,6 +60,9 @@ const QuoteForm = () => {
           <textarea name="message" />
           <input type="submit" value="Send" />
         </form>
+      </div>
+      <div className="Quote-footer">
+         <Footer />
       </div>
     </div>
   );

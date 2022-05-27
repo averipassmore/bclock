@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from './Footer'
 
 const Reviews = () => {
   return (
@@ -77,6 +78,7 @@ const Reviews = () => {
             </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -675,6 +675,15 @@ div *::-webkit-scrollbar-thumb {
   -webkit-transition : color 500ms, transform 500ms;
 }
 
+.Quote-footer {
+  position: relative;
+  margin-top: 80vmin;
+
+}
+
+.Quote-form-page {
+  height: 100%;
+}
 
 
 /* Footer Styling */

@@ -33,7 +33,7 @@ const FirstSection = () => {
           <img src={skelly} className="Skelly-right" alt=""></img>
         </div>
         
-        <h2 className="First-section-text-2">Under construction! Feel free to look around!</h2>
+        <h2 className="First-section-text-2">Veteran Owned and Operated Since 1995</h2>
         {/* <h1 className="First-section-text-2">"For all your security needs!"</h1> */}
       </div>
       <div className="First-section-footer">
