@@ -1,4 +1,4 @@
-Styled, developed, and copywrighted by Averi Passmore.
+Developed, styled, and copywrote by Averi Passmore.
 
 # Description
 Deployed Website: https://bouldercitylockskeysguns.netlify.app/
