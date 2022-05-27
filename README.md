@@ -13,7 +13,7 @@ Email: averinpassmore@gmail.com
 
 Github: https://github.com/averipassmore/
 
-Powered by React, Node.js, Vanilla CSS, and Email.js
+Powered by Node.js, React, CSS, and Email.js
 
 Deployed on Netlify
 
