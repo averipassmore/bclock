@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import Footer from "./Footer";
 
 const QuoteForm = () => {
@@ -9,18 +9,37 @@ const QuoteForm = () => {
   const form = useRef();
   let navigate = useNavigate();
 
+
   const sendEmail = async (e) => {
     e.preventDefault();
+    let isComplete = true;
+    for (let i = 0; i < form.current.length - 1; i++) {
+      if (form.current[i].value === "") {
+        document.getElementsByName(`${form.current[i].name}`)[0].style.border = "1px red solid";
+        isComplete=false;
+      } else {
+        document.getElementsByName(`${form.current[i].name}`)[0].style.border = "none";
+      }
+    }
+
+    if(!isComplete) {
+      alert("Please fill out all fields")
+      .then( () => navigate('/'))
+      return;
+    }
+
+    if(!window.confirm("Please confirm request")) return;
 
     // works just dont want to use all of the emails
-    // emailjs.sendForm('service_vxo5ko4', 'template_bnbzl4f', form.current, 'Um-6jVm3sb72fybJ3')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //       alert('Your request was successfully submitted');
-    //   }, (error) => {
-    //       console.log(error.text);
-    //       alert("Your request failed...", error)
-    //   });
+    emailjs.sendForm('service_vxo5ko4', 'template_bnbzl4f', form.current, 'Um-6jVm3sb72fybJ3')
+      .then((result) => {
+          console.log(result.text);
+          alert('Your request was successfully submitted');
+      }, (error) => {
+          console.log(error.text);
+          alert("Your request failed... Please try again", error)
+          return;
+      });
     navigate('/');
   };
 
@@ -41,16 +60,14 @@ const QuoteForm = () => {
       <div className="Quote-form-background">
         <h1 className="Quote-form-title">How can we help?</h1>
         <form ref={form} onSubmit={sendEmail} className="Quote-form">
-          <label for="user_name">Name</label>
-          <input type="text" name="user_name" />
+          <label for="user_name" >Name</label>
+          <input type="text" name="user_name" placeholder="First Last"/>
           <label>Email</label>
-          {/* <input type="email" name="user_email" /> */}
-          <input type="text" name="user_email" />
+          <input type="text" name="user_email" placeholder="example@email.com"/>
           <label>Phone</label>
-          {/* <input type="tel" name="user_phone" pattern="[0-9]{10}"/> */}
-          <input type="text" name="user_phone"/>
+          <input type="text" name="user_phone" placeholder="123-456-7890"/>
           <label for="typeOfService">Type of Service</label>
-          <select id="typeOfService" name="typeOfService" onChange={input}>
+          <select id="typeOfService" name="type_of_service" onChange={input}>
             <option value={'automotive'}>automotive</option>
             <option value={'residential'}>residential</option>
             <option value={'commercial'}>commercial</option>
