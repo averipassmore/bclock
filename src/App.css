@@ -714,7 +714,8 @@ div *::-webkit-scrollbar-thumb {
   text-align: left;
   align-items: center;
   font-family: merienda;
-  max-width: 33%;
+  width: 40vmin;
+  max-width: 30%;
 }
 
 .Footer-info-wrapper h1{
@@ -754,7 +755,8 @@ div *::-webkit-scrollbar-thumb {
 
 .Reviews-footer {
   font-size: 1.5vmin;
-  max-width: 33%;
+  width: 40vmin;
+  max-width: 30%;
 }
 
 .Reviews-footer h1{
