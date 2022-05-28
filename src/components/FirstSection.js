@@ -15,17 +15,24 @@ const FirstSection = () => {
     return () => clearInterval(interval);
   });
 
+  let isScrolling;
+  window.addEventListener('scroll', (event) => {
+    window.clearTimeout( isScrolling )
+
+    isScrolling = setTimeout(function() {
+      let reviewsY = document.getElementById("reviews-component").getBoundingClientRect().top + window.pageYOffset - 110;
+      if (window.scrollY > reviewsY + 100) {
+        document.getElementById("down-button").style.transform = "scale(1.25) rotate(180deg)";
+        document.getElementById("down-button").style.marginBottom = "22vmin";
+      } else {
+        document.getElementById("down-button").style.transform = "scale(1.25)";
+        document.getElementById("down-button").style.marginBottom = "0vmin";
+    }
+    }, 66)
+
+  })
+
   const scrollToSection = () => {
-    // if (window.pageYOffset < 721) {
-    //   scroller.scrollTo("Services-component", {
-    //     offset: -100
-    //   })
-    // } else if (721 < window.pageYOffset < 1418) {
-    //   scroller.scrollTo("Reviews-wrapper", {
-    //     offset: -100
-    //   })
-    // }
-    // console.log(window.pageYOffset)
 
     let servicesY = document.getElementById("Services-component").getBoundingClientRect().top + window.pageYOffset - 100;
     let reviewsY = document.getElementById("reviews-component").getBoundingClientRect().top + window.pageYOffset - 110;
