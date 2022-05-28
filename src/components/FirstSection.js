@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Services from "./Services";
-import TopBar from "./TopBar";
-
 // import { scroller } from "react-scroll/modules";
 
 const FirstSection = () => {

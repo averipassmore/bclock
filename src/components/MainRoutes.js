@@ -1,7 +1,5 @@
 import React from "react";
-import NavBar from "./NavBar";
 import TopBar from "./TopBar";
-import FirstSection from "./FirstSection";
 import QuoteForm from "./QuoteForm";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
