@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import skelly from "../skellyLogo.png";
-import Services from "./Services";
 import FirstSection from "./FirstSection";
-import QuoteForm from "./QuoteForm";
 // import { scroller } from "react-scroll/modules";
 
 const NavBar = () => {
