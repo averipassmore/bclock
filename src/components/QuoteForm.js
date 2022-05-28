@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import Footer from "./Footer";
+import TopBar from "./TopBar";
+import NavBar from "./NavBar";
 
 const QuoteForm = () => {
   const [label, setLabel] = useState('Please describe in detail your request');
@@ -55,18 +57,20 @@ const QuoteForm = () => {
 
   }
   return (
-    <div className="Quote-form-page">
+    <div>
+      <TopBar />
+      <div className="Quote-form-page">
       <div className="Wrapper-div"></div>
       <div className="Quote-form-background">
         <h1 className="Quote-form-title">How can we help?</h1>
         <form ref={form} onSubmit={sendEmail} className="Quote-form">
-          <label for="user_name" >Name</label>
+          <label htmlFor="user_name" >Name</label>
           <input type="text" name="user_name" placeholder="First Last"/>
           <label>Email</label>
           <input type="text" name="user_email" placeholder="example@email.com"/>
           <label>Phone</label>
           <input type="text" name="user_phone" placeholder="123-456-7890"/>
-          <label for="typeOfService">Type of Service</label>
+          <label htmlFor="typeOfService">Type of Service</label>
           <select id="typeOfService" name="type_of_service" onChange={input}>
             <option value={'automotive'}>automotive</option>
             <option value={'residential'}>residential</option>
@@ -82,6 +86,8 @@ const QuoteForm = () => {
          <Footer />
       </div>
     </div>
+    </div>
+    
   );
 }
 

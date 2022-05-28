@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 const TopBar = () => {
   return (
@@ -20,6 +21,7 @@ const TopBar = () => {
             {/* </div> */}
           </div>
         </div>
+        <NavBar />
     </div>
   )
 }
