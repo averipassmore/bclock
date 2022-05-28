@@ -16,16 +16,17 @@ const FirstSection = () => {
   });
 
   // const scrollToSection = () => {
-  //   if (window.pageYOffset < 721) {
-  //     scroller.scrollTo("Services-component", {
-  //       offset: -100
-  //     })
-  //   } else if (721 < window.pageYOffset < 1418) {
-  //     scroller.scrollTo("Reviews-wrapper", {
-  //       offset: -100
-  //     })
-  //   }
-  //   console.log(window.pageYOffset)
+    // if (window.pageYOffset < 721) {
+    //   scroller.scrollTo("Services-component", {
+    //     offset: -100
+    //   })
+    // } else if (721 < window.pageYOffset < 1418) {
+    //   scroller.scrollTo("Reviews-wrapper", {
+    //     offset: -100
+    //   })
+    // }
+    // console.log(window.pageYOffset)
+
   // }
 
   const setRight = (index) => {
@@ -36,13 +37,13 @@ const FirstSection = () => {
   const rotateGallery = () => {
     let currentIndex = pictureIndex;
     let nextIndex = currentIndex + 1;
-    console.log(nextIndex === htmlCollection.length);
+
     if (nextIndex === htmlCollection.length) {
       currentIndex = htmlCollection.length - 1;
       nextIndex = 0;
       setPictureIndex(0);
     } else setPictureIndex(pictureIndex + 1);
-      console.log('length', htmlCollection.length)
+
       if (nextIndex === htmlCollection.length) {
         document.getElementById(`${currentIndex}`).style = 'transform: translate(-100%)';
         document.getElementById(`${nextIndex}`).style = 'transform: translate(0%)';
