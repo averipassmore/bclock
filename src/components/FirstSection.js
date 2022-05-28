@@ -61,10 +61,9 @@ const FirstSection = () => {
         <p className="First-section-text">Best Locksmith and Arms Dealer in Southern Nevada</p>
         <img id="0" className="Background-images" src="https://images.unsplash.com/photo-1629048666499-a1a4fde347a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt=""></img>
         <img id="1" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1629048489776-b41f863a2fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt=""></img>
-        <img id="2" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1464377075287-4c011c458f04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJvdWxkZXIlMjBjaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt=""></img>
-        <img id="3" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1612648138792-4202876cd3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80" alt=""></img>
-        <img id="4" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1602044756164-0688ed14786b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxha2UlMjBtZWFkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt=""></img>
-        <img id="5" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1568661559054-4325ba7fc571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" alt=""></img>
+        <img id="2" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1612648138792-4202876cd3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80" alt=""></img>
+        <img id="3" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1602044756164-0688ed14786b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxha2UlMjBtZWFkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt=""></img>
+        <img id="4" className="Background-images" style={{transform: "translate(100%"}} src="https://images.unsplash.com/photo-1568661559054-4325ba7fc571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" alt=""></img>
         <div className="First-section-button">
           <Link to='/quote' className="First-section-button-text">Get a Quote!</Link>
         </div>
