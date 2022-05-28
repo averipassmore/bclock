@@ -1,5 +1,6 @@
 import React from "react";
 import Reviews from "./Reviews";
+import AboutUs from "./AboutUs";
 
 const Services = () => {
   return (
@@ -61,6 +62,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <AboutUs />
       <Reviews />
     </div>
   )

@@ -12,7 +12,6 @@ const TopBar = () => {
               <a href="https://www.instagram.com/bclockskeysguns/">
                 <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" className="Instagram-logo"></img>
               </a>
-              <div>Follow us!</div>
             </div>
             {/* <div className="Email-wrapper"> */}
               <a href="mailto:bckeyz@yahoo.com">

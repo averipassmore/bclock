@@ -18,7 +18,6 @@ html {
   display: flex;
   flex-direction: row;
   background-color: #CECCCC;
-  /* background-color: #F1f7ed; */
   justify-content: space-between;
   align-items: center;
   height: 5vmin;
@@ -27,6 +26,7 @@ html {
   z-index: 3;
   top: 0;
   max-width: 100%;
+  transition: top 0.3s;
 }
 
 .Instagram-logo {
@@ -36,7 +36,7 @@ html {
   padding-right: 1vmin;
   position: relative;
   display: flex;
-  opacity: .75;
+  opacity: .75; 
   transition: 1000ms linear;
 }
 
@@ -49,15 +49,6 @@ html {
   filter: invert(1);
   opacity: 1;
   -webkit-transition : -webkit-filter 500ms linear;
-}
-
-.Instagram-wrapper div{
-  position: absolute;
-  opacity: 1;
-  visibility: hidden;
-  background-color: #ccc;
-  width: 10vmin;
-  text-align: center;
 }
 
 .Instagram-wrapper:hover div{
@@ -250,27 +241,18 @@ html {
   flex-direction: row;
   justify-content: center;
   background-color: #282c34;
-  /* background-color: #002400; */
-  /* background-color: #2f0147; */
-  /* background-color: #1f0322; */
-  /* background-color: #2f0601; */
-  /* background-color: #00100B; */
-  /* background-color: #7ca982; */
-  /* background-color: #243e36; */
   height: 75vmin;
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
 }
 
 .Wrapper-div {
-  height:15vmin;
-  background-color:#65686e;
+  height: 15vmin;
+  background-color: #65686e;
 }
 
 .First-section-button {
-  /* background-color: rgb(246, 243, 242); */
-  background-color: #F1f7ed;
+  background-color: transparent;
   height: 16vmin;
   width: 40vmin;
   border-radius: 3vmin;
@@ -279,38 +261,26 @@ html {
   font-size: 4vmin;
   cursor: pointer;
   position: absolute;
-  top: 30vmin;
+  top: 45vmin;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 500ms ease;
+  border: #f1f7ed solid .2vmin;
 }
 
 .First-section-button:hover{
   transform: scale(1.1);
-  background-color: #65686e;
-  /* background-color: #002400; */
-  /* background-color: #2F0147; */
-  /* background-color: #1f0322; */
-  /* background-color: #2f0601; */
-  /* background-color: #00100B; */
-  /* background-color: #243e36; */
   border-style: solid;
-  /* border-color: white; */
-  border-color: #F1f7ed;
   border-width: .5vmin;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   -webkit-transition : transform 500ms, background-color 750ms, border-color 500ms, border-width 1000ms;
-}
-
-.First-section-button:hover .First-section-button-text {
-  /* color: white; */
-  color: #F1f7ed;
-  -webkit-transition : color 500ms;
 }
 
 .First-section-button-text {
   text-decoration: none;
-  color: #282c34;
+  color: #f1f7ed;
   font-family: Merienda;
   font-weight: bolder;
   font-size: 4.5vmin;
@@ -347,52 +317,87 @@ html {
   width: 101vmin;
 }
 
-.Skelly-left {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  filter: saturate(85%);
-}
-
-.Skelly-right {
-  position: relative;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  filter: saturate(85%);
-}
-
-.Skelly-left-wrapper {
-  position: relative;
-  display: flex;
-  height: 70vmin;
-  width: 63vmin;
-  right: 20vmin;
-  overflow: hidden;
-}
-
-.Skelly-right-wrapper {
-  position: relative;
-  display: flex;
-  height: 70vmin;
-  width: 63vmin;
-  left: 20vmin;
-  overflow: hidden;
-}
-
 .First-section-footer {
   height: 10vmin;
   background-color: #282c34;
-  /* background-color: #002400; */
-  /* background-color: #2F0147; */
-  /* background-color: #1f0322;
-  background-color: #00100B; */
-  /* background-color: #7ca982; */
   display: flex;
   place-content: center;
 }
+
+.Background-images {
+  width: 100%;
+  height: 60vmin;
+  margin-top: 11vmin;
+  position: absolute;
+  object-fit: cover;
+  display: block;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 2000ms;
+}
+
+/* .Slide-left-in {
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  transform: translate(0%);
+}
+
+.Slide-right-out {
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  transform: translate(100%);
+}
+
+.Slide-right-in {
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  transform: translate(0%);
+} */
+
+.Carousel-button-left {
+  position: absolute;
+  left: 1vmin;
+  top: 50vmin;
+  height: 5vmin;
+  width: 5vmin;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+#Left-arrow {
+  border: solid #f1f7ed;
+  border-width: 0 .5vmin .5vmin 0;
+  display: inline-block;
+  padding: 1vmin;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.Carousel-button-right {
+  position: absolute;
+  right: 1vmin;
+  top: 50vmin;
+  height: 5vmin;
+  width: 5vmin;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+#Right-arrow {
+  border: solid #f1f7ed;
+  border-width: .5vmin 0 0 .5vmin;
+  display: inline-block;
+  left: 10vmin;
+  padding: 1vmin;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
 
 
 /* navigate down button styling */
@@ -584,10 +589,11 @@ div *::-webkit-scrollbar-thumb {
 
 .Reviews-text p{
   font-size: 2.5vmin;
+  margin-top: -4%;
 }
 
 .Reviews-text h1{
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 
 
