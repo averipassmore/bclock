@@ -244,6 +244,8 @@ html {
   height: 75vmin;
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .Wrapper-div {
@@ -261,7 +263,7 @@ html {
   font-size: 4vmin;
   cursor: pointer;
   position: absolute;
-  top: 45vmin;
+  top: 30vmin;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +294,7 @@ html {
   font-weight: bolder;
   font-size: 4vmin;
   position: absolute;
-  top: 14vmin;
+  top: -1vmin;
   z-index: 1;
   overflow-wrap: break-word;
   inline-size: 100vmin;
@@ -333,6 +335,8 @@ html {
   display: block;
   -webkit-transition-duration: 600ms;
   transition-duration: 2000ms;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* .Slide-left-in {
@@ -353,7 +357,7 @@ html {
   transform: translate(0%);
 } */
 
-.Carousel-button-left {
+/* .Carousel-button-left {
   position: absolute;
   left: 1vmin;
   top: 50vmin;
@@ -364,9 +368,9 @@ html {
   background-color: transparent;
   display: flex;
   align-items: center;
-}
+} */
 
-#Left-arrow {
+/* #Left-arrow {
   border: solid #f1f7ed;
   border-width: 0 .5vmin .5vmin 0;
   display: inline-block;
@@ -386,9 +390,9 @@ html {
   background-color: transparent;
   display: flex;
   align-items: center;
-}
+} */
 
-#Right-arrow {
+/* #Right-arrow {
   border: solid #f1f7ed;
   border-width: .5vmin 0 0 .5vmin;
   display: inline-block;
@@ -396,7 +400,7 @@ html {
   padding: 1vmin;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-}
+} */
 
 
 
