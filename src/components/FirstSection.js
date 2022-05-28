@@ -15,7 +15,7 @@ const FirstSection = () => {
     return () => clearInterval(interval);
   });
 
-  // const scrollToSection = () => {
+  const scrollToSection = () => {
     // if (window.pageYOffset < 721) {
     //   scroller.scrollTo("Services-component", {
     //     offset: -100
@@ -27,7 +27,26 @@ const FirstSection = () => {
     // }
     // console.log(window.pageYOffset)
 
-  // }
+    let servicesY = document.getElementById("Services-component").getBoundingClientRect().top + window.pageYOffset - 100;
+    let reviewsY = document.getElementById("reviews-component").getBoundingClientRect().top + window.pageYOffset - 110;
+  
+    if (window.scrollY <= servicesY ){
+       window.scrollTo({top: servicesY, behavior: 'smooth'});
+       console.log('first');
+    } else if (window.scrollY > servicesY && window.scrollY + 5 < reviewsY) {
+      window.scrollTo({top: reviewsY, behavior: 'smooth'});
+      console.log('second');
+    } else {
+      window.scrollTo({top: document.documentElement.scrollTop * 2, behavior: 'smooth'});
+      console.log('third');
+      console.log(document.documentElement.scrollTop);
+    }
+ 
+    console.log("servicesY, ", servicesY)
+    console.log("reviewsY, ", reviewsY)
+    console.log("window.scrolly, ", window.scrollY)
+    console.log("window y offset, ", window.pageYOffset)
+  }
 
   const setRight = (index) => {
     document.getElementById(`${index}`).style.transform = 'translate(100%)';
@@ -79,7 +98,7 @@ const FirstSection = () => {
         {/* <h1 className="First-section-text-2">"For all your security needs!"</h1> */}
       </div>
       <div className="First-section-footer">
-        {/* <button className="Navigate-down-button" onClick={scrollToSection}></button> */}
+        <button className="Navigate-down-button" onClick={scrollToSection}></button>
       </div>
       <Services />
     </div>

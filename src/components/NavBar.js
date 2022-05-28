@@ -27,7 +27,9 @@ const NavBar = () => {
     e.target.id === "About-link" && document.getElementById("Top").scrollIntoView();
     // console.log(document.getElementById("first").firstElementChild.innerHTML);
     console.log(document.getElementById("Services-component"))
-    e.target.id === "Services-link" && document.getElementById("Services-component").scrollIntoView();
+    document.getElementById("Services-component")
+    let y = document.getElementById("Services-component").getBoundingClientRect().top + window.pageYOffset - 100;
+    e.target.id === "Services-link" && window.scrollTo({top: y, behavior: 'smooth'});
     // e.target.id === "Services-link" && document.getElementById("Services-component").scrollIntoView()
     // const position = window.pageYOffset;
     // setScrollPos(position);

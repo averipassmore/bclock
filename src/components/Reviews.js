@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 const Reviews = () => {
   return (
-    <div>
+    <div id='reviews-component'>
       <div className="Reviews-wrapper">
       <h1 className="Reviews-title">What customers say about us...</h1>
         <div className="Reviews-cell">
