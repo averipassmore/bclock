@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import Footer from "./Footer";
 import TopBar from "./TopBar";
-import NavBar from "./NavBar";
 
 const QuoteForm = () => {
   const [label, setLabel] = useState('Please describe in detail your request');
