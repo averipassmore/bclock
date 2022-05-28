@@ -36,10 +36,23 @@ const FirstSection = () => {
     } else if (window.scrollY > servicesY && window.scrollY + 5 < reviewsY) {
       window.scrollTo({top: reviewsY, behavior: 'smooth'});
       console.log('second');
-    } else {
+    } else if (window.scrollY + 5 > reviewsY){
       window.scrollTo({top: document.documentElement.scrollTop * 2, behavior: 'smooth'});
       console.log('third');
       console.log(document.documentElement.scrollTop);
+    }
+
+    if (window.scrollY + 5 > reviewsY) {
+      document.getElementById("down-button").style.transform = "scale(1.25) rotate(180deg)";
+      document.getElementById("down-button").style.marginBottom = "22vmin";
+      if (window.scrollY > reviewsY) {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        document.getElementById("down-button").style.transform = "scale(1.25)";
+        document.getElementById("down-button").style.marginBottom = "0vmin";
+      }
+    } else {
+      document.getElementById("down-button").style.transform = "scale(1.25)";
+      document.getElementById("down-button").style.marginBottom = "0vmin";
     }
  
     console.log("servicesY, ", servicesY)
@@ -98,7 +111,7 @@ const FirstSection = () => {
         {/* <h1 className="First-section-text-2">"For all your security needs!"</h1> */}
       </div>
       <div className="First-section-footer">
-        <button className="Navigate-down-button" onClick={scrollToSection}></button>
+        <button className="Navigate-down-button" id="down-button" onClick={scrollToSection}></button>
       </div>
       <Services />
     </div>

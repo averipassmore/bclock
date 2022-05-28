@@ -415,12 +415,18 @@ html {
   background-size: cover;
   bottom: 2vmin;
   z-index: 1;
-  filter: invert(1)
+  filter: invert(1);
+  transition: ease-in-out;
 }
 
 .Navigate-down-button:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 400ms;
+}
+
+.Navigate-up-transition {
+  transform: scale(1.25) rotate(180deg);
   transition-duration: 400ms;
 }
 
