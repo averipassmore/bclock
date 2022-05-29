@@ -1,6 +1,6 @@
 import React from "react";
 import Reviews from "./Reviews";
-import AboutUs from "./AboutUs";
+// import AboutUs from "./AboutUs";
 
 const Services = () => {
   return (
