@@ -62,7 +62,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Reviews />
     </div>
   )
