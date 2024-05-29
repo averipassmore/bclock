@@ -10,7 +10,7 @@ const Footer = () => {
           <p><a href="https://www.google.com/maps/place/Boulder+City+Lock+And+Key/@35.9743439,-114.8451608,17z/data=!3m1!4b1!4m5!3m4!1s0x80c92ad585831789:0x32847d69817ff149!8m2!3d35.9743396!4d-114.8429721
 ">📍 916 Nevada Way Suite 4, Boulder City, NV 89005</a></p>
           <p><a href="mailto:bckeyz@yahoo.com">📧  bckeyz@yahoo.com</a></p>
-          <p><a href="tel:+1702-682-8822">📞 (702) 682 - 8822</a></p>
+          <p><a href="tel:+1702-241-8869">📞 (702) 241 - 8869</a></p>
         </div>
       </div>
       <div className="Reviews-footer">
